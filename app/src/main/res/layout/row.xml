@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <data>
+        <variable name="space1" type="String" />
+        <variable name="space2" type="String" />
+        <variable name="space3" type="String" />
+        <variable name="tag1" type="String" />
+        <variable name="tag2" type="String" />
+        <variable name="tag3" type="String" />
+    </data>
+
+    <LinearLayout
+                  android:orientation="horizontal"
+                  android:layout_height="0dp"
+                  android:layout_width="match_parent">
+
+        <TextView
+                style="@style/SpaceTheme"
+                android:onClick="onSpaceClick"
+                android:text="@{space1}"
+                android:id="@+id/col_1"
+                android:tag="@{tag1}"/>
+
+        <View
+                android:background="@android:color/black"
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+
+        <TextView
+                style="@style/SpaceTheme"
+                android:onClick="onSpaceClick"
+                android:id="@+id/col_2"
+                android:text="@{space2}"
+                android:tag="@{tag2}"/>
+
+        <View
+                android:background="@android:color/black"
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+
+        <TextView
+                style="@style/SpaceTheme"
+                android:onClick="onSpaceClick"
+                android:id="@+id/col_3"
+                android:text="@{space3}"
+                android:tag="@{tag3}"/>
+
+    </LinearLayout>
+
+</layout>

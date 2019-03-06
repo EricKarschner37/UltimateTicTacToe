@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable name="tag1" type="String" />
+        <variable name="tag2" type="String" />
+        <variable name="tag3" type="String" />
+    </data>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1">
+
+
+        <fragment
+                android:id="@+id/col_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        <!--android:tag="@{tag1}"-->
+
+        <View
+                android:background="@android:color/black"
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+
+
+        <FrameLayout
+                android:id="@+id/col_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        <!--android:tag="@{tag2}"-->
+
+        <View
+                android:background="@android:color/black"
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+
+        <FrameLayout
+                android:id="@+id/col_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        <!--android:tag="@{tag3}"-->
+
+    </LinearLayout>
+
+</layout>

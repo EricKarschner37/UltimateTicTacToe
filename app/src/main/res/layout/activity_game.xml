@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+                name="viewModel"
+                type="com.eric.karschner.ultimatetictactoe.viewmodel.GameViewModel" />
+    </data>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:tools="http://schemas.android.com/tools"
+            tools:context=".MainActivity">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="48dp"
+                android:id="@+id/large_board"
+                xmlns:tools="http://schemas.android.com/tools"
+                tools:context=".MainActivity">
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_height="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1">
+
+
+                    <include layout="@layout/board"
+                             app:tag='@{0}' app:viewModel='@{viewModel}'
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"/>
+                    <!--<View-->
+                            <!--android:tag="0"-->
+                            <!--android:id="@+id/block_0"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:onClick="onBoardClick" />-->
+
+                <View
+                        android:background="@android:color/black"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent" />
+
+
+                <RelativeLayout android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent">
+                    <include layout="@layout/board"
+                             app:tag='@{1}' />
+                    <!--<View-->
+                            <!--android:id="@+id/block_1"-->
+                            <!--android:tag="1"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:onClick="onBoardClick" />-->
+                </RelativeLayout>
+
+                <View
+                        android:background="@android:color/black"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent" />
+
+                <RelativeLayout android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent">
+                    <include layout="@layout/board"
+                             app:tag='@{2}' />
+                    <!--<View-->
+                            <!--android:id="@+id/block_2"-->
+                            <!--android:tag="2"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:onClick="onBoardClick" />-->
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/black" />
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_height="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1">
+
+
+                <RelativeLayout android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent">
+
+                    <include layout="@layout/board"
+                             app:tag='@{3}' />
+                    <!--<View-->
+                            <!--android:id="@+id/block_3"-->
+                            <!--android:tag="3"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:onClick="onBoardClick" />-->
+
+                </RelativeLayout>
+
+                <View
+                        android:background="@android:color/black"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent" />
+
+
+                <RelativeLayout android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent">
+
+                    <include layout="@layout/board"
+                             app:tag='@{4}' />
+                    <!--<View-->
+                            <!--android:id="@+id/block_4"-->
+                            <!--android:tag="4"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:onClick="onBoardClick" />-->
+                </RelativeLayout>
+
+                <View
+                        android:background="@android:color/black"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent" />
+
+                <RelativeLayout android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent">
+
+                    <include layout="@layout/board"
+                             app:tag='@{5}' />
+                    <!--<View-->
+                            <!--android:id="@+id/block_5"-->
+                            <!--android:tag="5"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:onClick="onBoardClick" />-->
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/black" />
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_height="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1">
+
+
+                <RelativeLayout android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent">
+
+                    <include layout="@layout/board"
+                             app:tag='@{6}' />
+                    <!--<View-->
+                            <!--android:id="@+id/block_6"-->
+                            <!--android:tag="6"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:onClick="onBoardClick" />-->
+                </RelativeLayout>
+
+                <View
+                        android:background="@android:color/black"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent" />
+
+
+                <RelativeLayout android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent">
+
+                    <include layout="@layout/board"
+                             app:tag='@{7}' />
+                    <!--<View-->
+                            <!--android:id="@+id/block_7"-->
+                            <!--android:tag="7"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:onClick="onBoardClick" />-->
+                </RelativeLayout>
+
+                <View
+                        android:background="@android:color/black"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent" />
+
+                <RelativeLayout android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent">
+
+                    <include layout="@layout/board"
+                             app:tag='@{8}' />
+                    <!--<View-->
+                            <!--android:id="@+id/block_8"-->
+                            <!--android:tag="8"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:onClick="onBoardClick" />-->
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+                android:fontFamily="casual"
+                android:textSize="32sp"
+                android:id="@+id/message_tv"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Restart"
+                    android:onClick="onRestartClick"
+                    android:padding="8dp"/>
+
+            <Button
+                    android:id="@+id/new_player_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Players"
+                    android:onClick="onNewPlayersClick"
+                    android:padding="8dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

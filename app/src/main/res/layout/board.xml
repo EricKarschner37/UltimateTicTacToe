@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+                name="viewModel"
+                type="com.eric.karschner.ultimatetictactoe.viewmodel.GameViewModel" />
+        <variable name="tag" type="Integer" />
+    </data>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            tools:context=".MainActivity"
+            android:id="@+id/board_root"
+            android:onClick="onBoardClick"
+            android:tag="@{tag}">
+
+        <include
+                layout="@layout/row"
+                android:id="@+id/row_1"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:space1="@{viewModel.game.games[@{tag}].board.get(0)}"
+                app:space2="@{viewModel.game.games[@{tag}].board.get(1)}"
+                app:space3="@{viewModel.game.games[@{tag}].board.get(2)}"
+                app:tag1='@{"0"}'
+                app:tag2='@{"1"}'
+                app:tag3='@{"2"}'/>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black" />
+
+        <include
+                layout="@layout/row"
+                android:id="@+id/row_2"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:space1="@{viewModel.game.games[@{tag}].board.get(3)}"
+                app:space2="@{viewModel.game.games[@{tag}].board.get(4)}"
+                app:space3="@{viewModel.game.games[@{tag}].board.get(5)}"
+                app:tag1='@{"3"}'
+                app:tag2='@{"4"}'
+                app:tag3='@{"5"}'/>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black" />
+
+        <include
+                layout="@layout/row"
+                android:id="@+id/row_3"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:space1="@{viewModel.game.games[@{tag}].board.get(6)}"
+                app:space2="@{viewModel.game.games[@{tag}].board.get(7)}"
+                app:space3="@{viewModel.game.games[@{tag}].board.get(8)}"
+                app:tag1='@{"6"}'
+                app:tag2='@{"7"}'
+                app:tag3='@{"8"}'/>
+    </LinearLayout>
+</layout>
