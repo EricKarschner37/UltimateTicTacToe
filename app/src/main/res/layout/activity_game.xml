@@ -30,17 +30,9 @@
                     android:layout_weight="1">
 
 
-                    <include layout="@layout/board"
-                             app:tag='@{0}' app:viewModel='@{viewModel}'
-                            android:layout_height="match_parent"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"/>
-                    <!--<View-->
-                            <!--android:tag="0"-->
-                            <!--android:id="@+id/block_0"-->
-                            <!--android:layout_width="match_parent"-->
-                            <!--android:layout_height="match_parent"-->
-                            <!--android:onClick="onBoardClick" />-->
+                <include layout="@layout/board"
+                         app:tag='@{0}' app:viewModel='@{viewModel}'
+                        android:id="@+id/board_0"/>
 
                 <View
                         android:background="@android:color/black"
@@ -48,36 +40,18 @@
                         android:layout_height="match_parent" />
 
 
-                <RelativeLayout android:layout_width="0dp"
-                                android:layout_weight="1"
-                                android:layout_height="match_parent">
-                    <include layout="@layout/board"
-                             app:tag='@{1}' />
-                    <!--<View-->
-                            <!--android:id="@+id/block_1"-->
-                            <!--android:tag="1"-->
-                            <!--android:layout_width="match_parent"-->
-                            <!--android:layout_height="match_parent"-->
-                            <!--android:onClick="onBoardClick" />-->
-                </RelativeLayout>
+                <include layout="@layout/board"
+                         app:tag='@{1}' app:viewModel='@{viewModel}'
+                         android:id="@+id/board_1"/>
 
                 <View
                         android:background="@android:color/black"
                         android:layout_width="1dp"
                         android:layout_height="match_parent" />
 
-                <RelativeLayout android:layout_width="0dp"
-                                android:layout_weight="1"
-                                android:layout_height="match_parent">
-                    <include layout="@layout/board"
-                             app:tag='@{2}' />
-                    <!--<View-->
-                            <!--android:id="@+id/block_2"-->
-                            <!--android:tag="2"-->
-                            <!--android:layout_width="match_parent"-->
-                            <!--android:layout_height="match_parent"-->
-                            <!--android:onClick="onBoardClick" />-->
-                </RelativeLayout>
+                <include layout="@layout/board"
+                         app:tag='@{2}' app:viewModel='@{viewModel}'
+                         android:id="@+id/board_2"/>
 
             </LinearLayout>
 
@@ -92,60 +66,27 @@
                     android:layout_width="match_parent"
                     android:layout_weight="1">
 
-
-                <RelativeLayout android:layout_width="0dp"
-                                android:layout_weight="1"
-                                android:layout_height="match_parent">
-
-                    <include layout="@layout/board"
-                             app:tag='@{3}' />
-                    <!--<View-->
-                            <!--android:id="@+id/block_3"-->
-                            <!--android:tag="3"-->
-                            <!--android:layout_width="match_parent"-->
-                            <!--android:layout_height="match_parent"-->
-                            <!--android:onClick="onBoardClick" />-->
-
-                </RelativeLayout>
+                <include layout="@layout/board"
+                         app:tag='@{3}' app:viewModel='@{viewModel}'
+                         android:id="@+id/board_3"/>
 
                 <View
                         android:background="@android:color/black"
                         android:layout_width="1dp"
                         android:layout_height="match_parent" />
 
-
-                <RelativeLayout android:layout_width="0dp"
-                                android:layout_weight="1"
-                                android:layout_height="match_parent">
-
-                    <include layout="@layout/board"
-                             app:tag='@{4}' />
-                    <!--<View-->
-                            <!--android:id="@+id/block_4"-->
-                            <!--android:tag="4"-->
-                            <!--android:layout_width="match_parent"-->
-                            <!--android:layout_height="match_parent"-->
-                            <!--android:onClick="onBoardClick" />-->
-                </RelativeLayout>
+                <include layout="@layout/board"
+                         app:tag='@{4}' app:viewModel='@{viewModel}'
+                         android:id="@+id/board_4"/>
 
                 <View
                         android:background="@android:color/black"
                         android:layout_width="1dp"
                         android:layout_height="match_parent" />
 
-                <RelativeLayout android:layout_width="0dp"
-                                android:layout_weight="1"
-                                android:layout_height="match_parent">
-
-                    <include layout="@layout/board"
-                             app:tag='@{5}' />
-                    <!--<View-->
-                            <!--android:id="@+id/block_5"-->
-                            <!--android:tag="5"-->
-                            <!--android:layout_width="match_parent"-->
-                            <!--android:layout_height="match_parent"-->
-                            <!--android:onClick="onBoardClick" />-->
-                </RelativeLayout>
+                <include layout="@layout/board"
+                         app:tag='@{5}' app:viewModel='@{viewModel}'
+                         android:id="@+id/board_5"/>
 
             </LinearLayout>
 
@@ -160,59 +101,27 @@
                     android:layout_width="match_parent"
                     android:layout_weight="1">
 
-
-                <RelativeLayout android:layout_width="0dp"
-                                android:layout_weight="1"
-                                android:layout_height="match_parent">
-
-                    <include layout="@layout/board"
-                             app:tag='@{6}' />
-                    <!--<View-->
-                            <!--android:id="@+id/block_6"-->
-                            <!--android:tag="6"-->
-                            <!--android:layout_width="match_parent"-->
-                            <!--android:layout_height="match_parent"-->
-                            <!--android:onClick="onBoardClick" />-->
-                </RelativeLayout>
+                <include layout="@layout/board"
+                         app:tag='@{6}' app:viewModel='@{viewModel}'
+                         android:id="@+id/board_6"/>
 
                 <View
                         android:background="@android:color/black"
                         android:layout_width="1dp"
                         android:layout_height="match_parent" />
 
-
-                <RelativeLayout android:layout_width="0dp"
-                                android:layout_weight="1"
-                                android:layout_height="match_parent">
-
-                    <include layout="@layout/board"
-                             app:tag='@{7}' />
-                    <!--<View-->
-                            <!--android:id="@+id/block_7"-->
-                            <!--android:tag="7"-->
-                            <!--android:layout_width="match_parent"-->
-                            <!--android:layout_height="match_parent"-->
-                            <!--android:onClick="onBoardClick" />-->
-                </RelativeLayout>
+                <include layout="@layout/board"
+                         app:tag='@{7}' app:viewModel='@{viewModel}'
+                         android:id="@+id/board_7"/>
 
                 <View
                         android:background="@android:color/black"
                         android:layout_width="1dp"
                         android:layout_height="match_parent" />
 
-                <RelativeLayout android:layout_width="0dp"
-                                android:layout_weight="1"
-                                android:layout_height="match_parent">
-
-                    <include layout="@layout/board"
-                             app:tag='@{8}' />
-                    <!--<View-->
-                            <!--android:id="@+id/block_8"-->
-                            <!--android:tag="8"-->
-                            <!--android:layout_width="match_parent"-->
-                            <!--android:layout_height="match_parent"-->
-                            <!--android:onClick="onBoardClick" />-->
-                </RelativeLayout>
+                <include layout="@layout/board"
+                         app:tag='@{8}' app:viewModel='@{viewModel}'
+                         android:id="@+id/board_8"/>
 
             </LinearLayout>
 

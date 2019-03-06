@@ -19,7 +19,6 @@
 
         <TextView
                 style="@style/SpaceTheme"
-                android:onClick="onSpaceClick"
                 android:text="@{space1}"
                 android:id="@+id/col_1"
                 android:tag="@{tag1}"/>
@@ -31,7 +30,6 @@
 
         <TextView
                 style="@style/SpaceTheme"
-                android:onClick="onSpaceClick"
                 android:id="@+id/col_2"
                 android:text="@{space2}"
                 android:tag="@{tag2}"/>
@@ -43,7 +41,6 @@
 
         <TextView
                 style="@style/SpaceTheme"
-                android:onClick="onSpaceClick"
                 android:id="@+id/col_3"
                 android:text="@{space3}"
                 android:tag="@{tag3}"/>

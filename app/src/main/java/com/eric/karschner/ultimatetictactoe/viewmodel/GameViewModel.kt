@@ -11,6 +11,7 @@ class GameViewModel(val player1:Player, val player2:Player): ViewModel() {
     var game = LargeGame(player1, player2)
     var board = game.board
     var endMessage = ""
+    var focusIsChangeable = true
 
 
     fun spaceTouchedAt(boardIndex:Int, spaceIndex:Int){
@@ -25,6 +26,11 @@ class GameViewModel(val player1:Player, val player2:Player): ViewModel() {
         game = LargeGame(player1, player2)
         updateBoardState()
         endMessage = ""
+    }
+
+    fun gameIsOverAt(index:Int): Boolean {
+        focusIsChangeable = game.games[index].isOver
+        return game.games[index].isOver
     }
 }
 class GameViewModelFactory(private val player1: Player, private val player2: Player) : ViewModelProvider.NewInstanceFactory() {

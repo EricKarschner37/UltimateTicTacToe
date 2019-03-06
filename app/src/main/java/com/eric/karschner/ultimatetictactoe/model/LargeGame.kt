@@ -23,7 +23,7 @@ class LargeGame(val player1:Player, val player2:Player) {
     }
 
     fun makeMoveOnSmallerBoard(boardIndex:Int, spaceIndex:Int){
-        if (!games[boardIndex].isOver && games[boardIndex].moveIsValidAt(spaceIndex)){
+        if (!games[boardIndex].isOver && games[boardIndex].moveIsValidAt(spaceIndex) && !isOver){
             games[boardIndex].makeMove(currentPlayer, spaceIndex)
 
             if (games[boardIndex].isOver && !games[boardIndex].isTied){
